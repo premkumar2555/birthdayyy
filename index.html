@@ -64,6 +64,7 @@
       justify-content: flex-start;  /* Align to the top of the container */
       align-items: center;
       width: 100px;
+      z-index: 10; /* Ensure images are on top */
     }
 
     .side-images img {
@@ -76,28 +77,28 @@
 
     /* Left Side - Adjusting the positions of images */
     .side-images .image-container.left img:nth-child(1) {
-      transform: translateY(20px);  /* First image stays at the top */
+      transform: translateY(0);
     }
 
     .side-images .image-container.left img:nth-child(2) {
-      transform: translateY(70px); /* Second image moved down */
+      transform: translateY(70px);
     }
 
     .side-images .image-container.left img:nth-child(3) {
-      transform: translateY(105px); /* Third image moved further down */
+      transform: translateY(140px);
     }
 
     /* Right Side - Adjusting the positions of images */
     .side-images .image-container.right img:nth-child(1) {
-      transform: translateY(20px);  /* First image stays at the top */
+      transform: translateY(0);
     }
 
     .side-images .image-container.right img:nth-child(2) {
-      transform: translateY(70px); /* Second image moved down */
+      transform: translateY(70px);
     }
 
     .side-images .image-container.right img:nth-child(3) {
-      transform: translateY(105px); /* Third image moved further down */
+      transform: translateY(140px);
     }
 
     .balloon {
@@ -202,7 +203,7 @@
     <div class="image-container right" style="position: absolute; right: 20px;">
       <img src="download.jpeg" alt="Right Top Image">
       <img src="51216288-66ae-4dd9-97dc-7bebc32fcf2b.jpeg" alt="Right Middle Image">
-      <img src= "cute quotes.jpeg"alt="Right Bottom Image">
+      <img src="cute quotes.jpeg" alt="Right Bottom Image">
     </div>
   </div>
 
