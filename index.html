@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Kaavyaa!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: radial-gradient(circle, #ffe4e1, #ffb6c1);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      animation: glow 2s infinite alternate;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #fff;
+      animation: glow 2s infinite alternate;
+      margin: 10px 0;
+    }
+
+    .gif-container {
+      margin-top: 40px;
+    }
+
+    .gif-container img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #ff69b4;
+      border-radius: 15px;
+      animation: bounce 2s infinite;
+    }
+
+    .side-images {
+      position: absolute;
+      top: 20%;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 80%;
+      pointer-events: none;
+    }
+
+    .side-images .image-container {
+      display: flex;
+      flex-direction: column;  /* Arrange images vertically */
+      justify-content: flex-start;  /* Align to the top of the container */
+      align-items: center;
+      width: 100px;
+    }
+
+    .side-images img {
+      width: 100px !important;
+      height: auto;
+      margin: 20px;  /* Space between images vertically */
+      border: 3px solid #ff69b4;
+      border-radius: 10px;
+    }
+
+    /* Left Side - Adjusting the positions of images */
+    .side-images .image-container.left img:nth-child(1) {
+      transform: translateY(30px);  /* First image stays at the top */
+    }
+
+    .side-images .image-container.left img:nth-child(2) {
+      transform: translateY(70px); /* Second image moved down */
+    }
+
+    .side-images .image-container.left img:nth-child(3) {
+      transform: translateY(105px); /* Third image moved further down */
+    }
+
+    /* Right Side - Adjusting the positions of images */
+    .side-images .image-container.right img:nth-child(1) {
+      transform: translateY(30px);  /* First image stays at the top */
+    }
+
+    .side-images .image-container.right img:nth-child(2) {
+      transform: translateY(70px); /* Second image moved down */
+    }
+
+    .side-images .image-container.right img:nth-child(3) {
+      transform: translateY(105px); /* Third image moved further down */
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 70px;
+      height: 100px;
+      background: radial-gradient(circle, #ff6b6b, #ff0000);
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+      background: #fff;
+      transform: translateX(-50%);
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 15px #ff69b4, 0 0 25px #ff1493, 0 0 35px #ff1493;
+      }
+      100% {
+        text-shadow: 0 0 15px #ff1493, 0 0 25px #ff1493, 0 0 35px #ff69b4;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(-50%, 0);
+      }
+      50% {
+        transform: translate(-50%, -100px);
+      }
+      100% {
+        transform: translate(-50%, 0);
+      }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .side-images img {
+        width: 60px; /* Reduce size */
+        margin: 10px; /* Adjust spacing */
+      }
+
+      h1 {
+        font-size: 1.8rem; /* Reduce font size */
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      .gif-container img {
+        width: 200px;
+      }
+
+      .container {
+        top: 10%;
+      }
+
+      .balloon {
+        width: 50px;
+        height: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎉 Happy Birthday, <br> Kaavyaa 🎂</h1>
+    <h2>Wishing you all the love and happiness in the world! 💖</h2>
+    <div class="gif-container">
+      <img src="Animation%20%E2%80%94%20Le%20Petit%20Elefant%20by%20Genevieve%20Santos.gif" alt="Birthday Animation">
+    </div>
+  </div>
+
+  <div class="side-images">
+    <!-- Left Side -->
+    <div class="image-container left" style="position: absolute; left: 20px;">
+      <img src="77c94bbc-ebb1-4160-8aeb-594bdeee0a1e.jpeg" alt="Left Top Image">
+      <img src="eea71a8b-8ad4-4732-ac44-946e3974b0ac.jpeg" alt="Left Middle Image">
+      <img src="d5e48ba1-7566-4ab1-b070-d152e0ebdbaa.jpeg" alt="Left Bottom Image">
+    </div>
+    <!-- Right Side -->
+    <div class="image-container right" style="position: absolute; right: 20px;">
+      <img src="download.jpeg" alt="Right Top Image">
+      <img src="51216288-66ae-4dd9-97dc-7bebc32fcf2b.jpeg" alt="Right Middle Image">
+      <img src= "cute quotes.jpeg"alt="Right Bottom Image">
+    </div>
+  </div>
+
+  <script>
+    // Balloons
+    const createBalloons = () => {
+      for (let i = 0; i < 15; i++) {
+        const balloon = document.createElement('div');
+        balloon.className = 'balloon';
+        balloon.style.left = `${Math.random() * 100}vw`;
+        balloon.style.animationDuration = `${Math.random() * 3 + 5}s`;
+        balloon.style.animationDelay = `${Math.random() * 2}s`;
+        document.body.appendChild(balloon);
+      }
+    };
+
+    createBalloons();
+  </script>
+
+</body>
+</html>
